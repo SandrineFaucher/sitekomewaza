@@ -1,0 +1,269 @@
+/* reset général et police pour l'ensemble du site */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "roboto", sans serif;
+
+
+}
+
+/* Gestion du body */
+
+body {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+
+/* Gestion de l'image de fond du header */
+#image-bols {
+    background: url("./images/header-image.jpg");
+    background-repeat: no-repeat;
+    height: 90vh;
+    background-position: center;
+}
+
+/* Fin de la gestion image de fond du header*/
+
+
+/* Gestion de la barre de navigation */
+
+header {
+    width: 100vw;
+
+
+}
+
+nav {
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#hamburger {
+    visibility: hidden;
+
+}
+
+#navigation {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+li {
+    display: flex;
+    margin: 8px;
+    align-items: center;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Fin de la barre de navigation*/
+
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+/*SECTION image + article*/
+
+#epices {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 30px;
+    margin-bottom: 30px;;
+    margin-right: 70px;
+}
+
+h1 {
+    font-size: 30px;
+    text-align: right;
+}
+
+h4 {
+    text-align: right;
+
+}
+
+article p {
+    width: 50vw;
+    margin-top: 30px;
+    text-align: right;
+
+
+}
+
+/* Fin section image + article */
+
+#image-slide img {
+    width: 100vw;
+
+}
+
+/* Section signature + image */
+
+.signature {
+    width: 100vw;
+    display: flex;
+    flex-direction: wrap;
+}
+
+.bloctext {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+
+}
+
+.bloctext h2 {
+    width: 50vw;
+    text-align: center;
+    line-height: 70px;
+    border-bottom: 3px solid black;
+
+}
+
+.paragraphe {
+    padding-top: 20px;
+
+}
+
+table {
+    width: 100vw;
+    margin-left: 50vw;
+}
+
+td {
+    margin-top: 20px;
+}
+
+.icone {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #CCD5D6;
+}
+
+p {
+    width: 50%;
+    text-align: left;
+}
+
+.titre {
+
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+iframe {
+    height: 50vh;
+    width: 100vw;
+    filter: grayscale(80%);
+}
+
+
+footer {
+    width: 100%;
+    height: 200px;
+    background-color: #255566;
+
+}
+
+footer h2 {
+    margin-bottom: 30px;
+    padding-top: 30px;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+}
+
+footer h3 {
+    text-align: center;
+    color: white;
+    font-size: 14px;
+
+}
+
+@media screen and (max-width: 1024px) {
+
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: white;
+        z-index: 1;
+    }
+
+
+}
+
+@media screen and (max-width: 576px) {
+
+    
+    #hamburger {
+        color: black;
+        visibility: visible !important;
+        margin-top: 15px;
+    }
+
+    #navigation {
+        display: none;
+        
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    nav img{
+        width:200px;
+    }
+    
+    li {
+        display: flex;
+        justify-content: center;
+    }
+
+    #epices{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #epices img{
+        width:100vw;
+    }
+    
+    article h1,h4,p{
+        width: 50%;
+
+    }
+
+}
